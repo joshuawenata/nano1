@@ -18,15 +18,21 @@ struct ContentView: View {
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
+        HStack {
+            Image("winter_forest_placeholder")
+                .resizable()
+                .padding()
+                .frame(width: 200, height: 200)
+                .border(Color.white, width: 20)
+            
+            VStack {
+                Text("Into the snow woods!")
+                    .font(.largeTitle)
+                Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
+                    .toggleStyle(.button)
+            }
+            .padding(.leading, 50)
 
-            Text("Hello, world!")
-
-            Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
-                .toggleStyle(.button)
-                .padding(.top, 50)
         }
         .padding()
         .onChange(of: showImmersiveSpace) { _, newValue in

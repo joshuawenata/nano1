@@ -12,15 +12,27 @@ import RealityKitContent
 struct ImmersiveView: View {
     var body: some View {
         RealityView { content in
-            // Add the initial RealityKit content
-            if let scene = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
-                content.add(scene)
-            }
+            let skybox = createSkybox()
+            content.add(skybox!)
         }
     }
-}
-
-#Preview {
-    ImmersiveView()
-        .previewLayout(.sizeThatFits)
+    
+    private func createSkybox() -> Entity? {
+            let largeSphere = MeshResource.generateSphere(radius: 2)
+            var skyboxMaterial = UnlitMaterial()
+            
+            do {
+                let texture = try TextureResource.load(named: "winter_forest")
+                skyboxMaterial.color = .init(texture: .init(texture))
+            } catch {
+                print("Failed to create skybox material: \(error)")
+                return nil
+            }
+            
+            let skyboxEntity = Entity()
+            skyboxEntity.components.set(ModelComponent(mesh: largeSphere, materials: [skyboxMaterial]))
+            
+            skyboxEntity.scale = .init(x: -1, y: 1, z: 1)
+            return skyboxEntity
+        }
 }
