@@ -17,12 +17,13 @@ struct nano1App: App {
             ContentView()
         }
 
-        ImmersiveSpace(id: "ImmersiveSpace") {
+        ImmersiveSpace(id: "WinterForestSpace") {
             ImmersiveView(skyboxAssets: "winter_forest")
         }
+        .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "MagicNightSpace") {
-            ImmersiveView(skyboxAssets: "night_magic")
+            ImmersiveView(skyboxAssets: "magic_night")
         }
         .immersionStyle(selection: $style, in: .full)
     }
