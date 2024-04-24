@@ -19,53 +19,27 @@ struct ContentView: View {
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
-        HStack {
-            HStack {
-                Image("winter_forest_placeholder")
-                    .resizable()
-                    .padding()
-                    .frame(width: 200, height: 200)
-                    .border(Color.white, width: 20)
-                
-                VStack {
-                    Text("Into the snow woods!")
-                        .font(.largeTitle)
-                    Button(action: {
-                        setSpace = "ImmersiveSpace"
-                        print("space: ", setSpace)
+        VStack {
+            Card(
+                card: CardModel(
+                    image: "winter_forest_placeholder",
+                    action: {
+                        setSpace = "WinterForestSpace"
                         showImmersiveSpace.toggle()
-                    }, label: {
-                        Text("Show Immersive Space")
-                    })
-                }
-                .padding(.leading, 50)
-                
-            }
-//            HALO TESTING
-            Spacer()
+                    }
+                )
+            )
             
-            HStack {
-                Image("magic_night_prev")
-                    .resizable()
-                    .padding()
-                    .frame(width: 200, height: 200)
-                    .border(Color.white, width: 20)
-                
-                VStack {
-                    Text("Into the unbelieveable magic night!")
-                        .font(.largeTitle)
-                    Button(action: {
+            Card(
+                card: CardModel(
+                    image: "magic_night_placeholder",
+                    action: {
                         setSpace = "MagicNightSpace"
-                        print("space: ", setSpace)
                         showImmersiveSpace.toggle()
-                    }, label: {
-                        Text("Show The Magic")
-                    })
-                }
-                .padding(.leading, 50)
-                
-            }
-            
+                    }
+                )
+            )
+
         }
         .padding()
         .onChange(of: showImmersiveSpace) { _, newValue in
