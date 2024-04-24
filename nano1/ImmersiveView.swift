@@ -10,6 +10,8 @@ import RealityKit
 import RealityKitContent
 
 struct ImmersiveView: View {
+    var skyboxAssets : String
+    
     var body: some View {
         RealityView { content in
             let skybox = createSkybox()
@@ -22,7 +24,7 @@ struct ImmersiveView: View {
             var skyboxMaterial = UnlitMaterial()
             
             do {
-                let texture = try TextureResource.load(named: "winter_forest")
+                let texture = try TextureResource.load(named: skyboxAssets)
                 skyboxMaterial.color = .init(texture: .init(texture))
             } catch {
                 print("Failed to create skybox material: \(error)")
