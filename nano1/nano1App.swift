@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct nano1App: App {
+    
+    @State private var style: ImmersionStyle = .full
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -21,5 +24,6 @@ struct nano1App: App {
         ImmersiveSpace(id: "MagicNightSpace") {
             ImmersiveView(skyboxAssets: "night_magic")
         }
+        .immersionStyle(selection: $style, in: .full)
     }
 }
