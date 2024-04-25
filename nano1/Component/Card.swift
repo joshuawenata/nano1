@@ -20,22 +20,23 @@ struct Card: View {
     var body: some View {
         HStack(alignment: .center) {
             
-            VStack {
-                Image(card.image)
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .cornerRadius(20)
+            ZStack {
+                VStack {
+                    Image(card.image)
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .cornerRadius(20)
+                }
+                .padding()
+                
                 Button(action: {
                     card.action()
                 }, label: {
-                    //show sf symbols
                     Image(systemName: "play.circle")
                         .font(.system(size: 50))
                 })
                 .buttonStyle(PlainButtonStyle())
-                .padding()
             }
-            .padding()
             
         }
         .padding(20)

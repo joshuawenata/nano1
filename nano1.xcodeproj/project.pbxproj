@@ -19,6 +19,7 @@
 		A6A9E3502BDA059B0041E504 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9E34F2BDA059B0041E504 /* Object.swift */; };
 		A6A9E3552BDA175A0041E504 /* Wolf_with_Animations.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A6A9E3542BDA17590041E504 /* Wolf_with_Animations.usdz */; };
 		A6A9E4992BDA87160041E504 /* deer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A6A9E4982BDA87160041E504 /* deer.usdz */; };
+		A6A9E49C2BDA9D280041E504 /* hab_en.reality in Resources */ = {isa = PBXBuildFile; fileRef = A6A9E49B2BDA9D280041E504 /* hab_en.reality */; };
 		DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */; };
 		DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		A6A9E3542BDA17590041E504 /* Wolf_with_Animations.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Wolf_with_Animations.usdz; path = ../../../../Downloads/Wolf_with_Animations.usdz; sourceTree = "<group>"; };
 		A6A9E3562BDA175F0041E504 /* wolf.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wolf.usdz; sourceTree = "<group>"; };
 		A6A9E4982BDA87160041E504 /* deer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = deer.usdz; sourceTree = "<group>"; };
+		A6A9E49B2BDA9D280041E504 /* hab_en.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = hab_en.reality; path = ../../../../../Downloads/hab_en.reality; sourceTree = "<group>"; };
 		DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +166,7 @@
 		A6A9E4972BDA75710041E504 /* ObjectUSDZ */ = {
 			isa = PBXGroup;
 			children = (
+				A6A9E49B2BDA9D280041E504 /* hab_en.reality */,
 				A6A9E4982BDA87160041E504 /* deer.usdz */,
 			);
 			path = ObjectUSDZ;
@@ -256,6 +259,7 @@
 				A69935B22BD77CC400F8BC0B /* Preview Assets.xcassets in Resources */,
 				A6A9E4992BDA87160041E504 /* deer.usdz in Resources */,
 				A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */,
+				A6A9E49C2BDA9D280041E504 /* hab_en.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
