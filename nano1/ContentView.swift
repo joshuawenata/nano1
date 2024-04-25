@@ -17,47 +17,70 @@ struct ContentView: View {
 
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    
+    var arraydata: [[String: String]] = [
+        ["image": "winter_forest_placeholder", "space": "WinterForestSpace"],
+        ["image": "magic_night_placeholder", "space": "MagicNightSpace"],
+        ["image": "mountain_cloud_placeholder", "space": "MountainCloudSpace"]
+    ]
 
     var body: some View {
-        VStack {
-            Card(
-                card: CardModel(
-                    image: "winter_forest_placeholder",
-                    action: {
-                        setSpace = "WinterForestSpace"
-                        showImmersiveSpace.toggle()
+        ZStack {
+            Image("background")
+                .scaledToFill()
+                .opacity(0.5)
+            VStack {
+                ScrollView {
+                    HStack {
+                        ForEach(arraydata, id: \.self) { data in
+                            Card(
+                                card: CardModel(
+                                    image: data["image"]!,
+                                    action: {
+                                        setSpace = data["space"]!
+                                        showImmersiveSpace.toggle()
+                                    }
+                                )
+                            )
+                            .padding(20)
+                        }
                     }
-                )
-            )
-            
-            Card(
-                card: CardModel(
-                    image: "magic_night_placeholder",
-                    action: {
-                        setSpace = "MagicNightSpace"
-                        showImmersiveSpace.toggle()
+                }
+                
+                if immersiveSpaceIsShown {
+                    Button {
+                        Task {
+                            await dismissImmersiveSpace()
+                            immersiveSpaceIsShown = false
+                            showImmersiveSpace.toggle()
+                        }
+                    } label: {
+                        Text("Close immersive space")
                     }
-                )
-            )
-
-        }
-        .padding()
-        .onChange(of: showImmersiveSpace) { _, newValue in
-            Task {
-                if newValue {
-                    switch await openImmersiveSpace(id: setSpace) {
-                    case .opened:
-                        immersiveSpaceIsShown = true
-                    case .error, .userCancelled:
-                        fallthrough
-                    @unknown default:
+                    .padding(.top, 30)
+                }
+            }
+            .padding()
+            .padding(.top, 30)
+            .padding(.bottom, 30)
+            .frame(width: 500, height: 600)
+            .onChange(of: showImmersiveSpace) { _, newValue in
+                Task {
+                    if newValue {
+                        switch await openImmersiveSpace(id: setSpace) {
+                        case .opened:
+                            immersiveSpaceIsShown = true
+                        case .error, .userCancelled:
+                            fallthrough
+                        @unknown default:
+                            immersiveSpaceIsShown = false
+                            showImmersiveSpace = false
+                        }
+                    } else if immersiveSpaceIsShown {
+                        await dismissImmersiveSpace()
                         immersiveSpaceIsShown = false
-                        showImmersiveSpace = false
+                        showImmersiveSpace.toggle()
                     }
-                } else if immersiveSpaceIsShown {
-                    await dismissImmersiveSpace()
-                    immersiveSpaceIsShown = false
-                    showImmersiveSpace.toggle()
                 }
             }
         }

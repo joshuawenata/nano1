@@ -16,6 +16,9 @@
 		A69935BD2BD77CC400F8BC0B /* nano1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935BC2BD77CC400F8BC0B /* nano1Tests.swift */; };
 		A69935CA2BD8BBA300F8BC0B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935C92BD8BBA300F8BC0B /* Card.swift */; };
 		A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935CC2BD8BC2400F8BC0B /* cardModel.swift */; };
+		A6A9E3502BDA059B0041E504 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9E34F2BDA059B0041E504 /* Object.swift */; };
+		A6A9E3552BDA175A0041E504 /* Wolf_with_Animations.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A6A9E3542BDA17590041E504 /* Wolf_with_Animations.usdz */; };
+		A6A9E4992BDA87160041E504 /* deer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A6A9E4982BDA87160041E504 /* deer.usdz */; };
 		DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */; };
 		DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +46,10 @@
 		A69935BC2BD77CC400F8BC0B /* nano1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nano1Tests.swift; sourceTree = "<group>"; };
 		A69935C92BD8BBA300F8BC0B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A69935CC2BD8BC2400F8BC0B /* cardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardModel.swift; sourceTree = "<group>"; };
+		A6A9E34F2BDA059B0041E504 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		A6A9E3542BDA17590041E504 /* Wolf_with_Animations.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Wolf_with_Animations.usdz; path = ../../../../Downloads/Wolf_with_Animations.usdz; sourceTree = "<group>"; };
+		A6A9E3562BDA175F0041E504 /* wolf.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wolf.usdz; sourceTree = "<group>"; };
+		A6A9E4982BDA87160041E504 /* deer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = deer.usdz; sourceTree = "<group>"; };
 		DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +95,8 @@
 		A69935A32BD77CC300F8BC0B /* nano1 */ = {
 			isa = PBXGroup;
 			children = (
+				A6A9E4972BDA75710041E504 /* ObjectUSDZ */,
+				A6A9E3512BDA0F470041E504 /* Pages */,
 				A69935CB2BD8BC0900F8BC0B /* Model */,
 				A69935C82BD8BB8800F8BC0B /* Component */,
 				A69935A82BD77CC300F8BC0B /* nano1App.swift */,
@@ -103,6 +112,7 @@
 		A69935A42BD77CC300F8BC0B /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				A6A9E3562BDA175F0041E504 /* wolf.usdz */,
 				A69935A52BD77CC300F8BC0B /* RealityKitContent */,
 			);
 			path = Packages;
@@ -119,6 +129,7 @@
 		A69935BB2BD77CC400F8BC0B /* nano1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A6A9E3542BDA17590041E504 /* Wolf_with_Animations.usdz */,
 				A69935BC2BD77CC400F8BC0B /* nano1Tests.swift */,
 			);
 			path = nano1Tests;
@@ -130,6 +141,7 @@
 				DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */,
 				DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */,
 				A69935C92BD8BBA300F8BC0B /* Card.swift */,
+				A6A9E34F2BDA059B0041E504 /* Object.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -140,6 +152,21 @@
 				A69935CC2BD8BC2400F8BC0B /* cardModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A6A9E3512BDA0F470041E504 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		A6A9E4972BDA75710041E504 /* ObjectUSDZ */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9E4982BDA87160041E504 /* deer.usdz */,
+			);
+			path = ObjectUSDZ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69935B22BD77CC400F8BC0B /* Preview Assets.xcassets in Resources */,
+				A6A9E4992BDA87160041E504 /* deer.usdz in Resources */,
 				A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A9E3552BDA175A0041E504 /* Wolf_with_Animations.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A9E3502BDA059B0041E504 /* Object.swift in Sources */,
 				A69935AB2BD77CC300F8BC0B /* ContentView.swift in Sources */,
 				A69935CA2BD8BBA300F8BC0B /* Card.swift in Sources */,
 				A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */,
