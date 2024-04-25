@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A69935A72BD77CC300F8BC0B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = A69935A62BD77CC300F8BC0B /* RealityKitContent */; };
 		A69935A92BD77CC300F8BC0B /* nano1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935A82BD77CC300F8BC0B /* nano1App.swift */; };
 		A69935AB2BD77CC300F8BC0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935AA2BD77CC300F8BC0B /* ContentView.swift */; };
 		A69935AD2BD77CC300F8BC0B /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935AC2BD77CC300F8BC0B /* ImmersiveView.swift */; };
@@ -48,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A69935A72BD77CC300F8BC0B /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +135,6 @@
 			);
 			name = nano1;
 			packageProductDependencies = (
-				A69935A62BD77CC300F8BC0B /* RealityKitContent */,
 			);
 			productName = nano1;
 			productReference = A69935A12BD77CC300F8BC0B /* nano1.app */;
@@ -494,13 +491,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A69935A62BD77CC300F8BC0B /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A69935992BD77CC300F8BC0B /* Project object */;
 }
