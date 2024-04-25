@@ -13,12 +13,9 @@
 		A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69935AE2BD77CC400F8BC0B /* Assets.xcassets */; };
 		A69935B22BD77CC400F8BC0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69935B12BD77CC400F8BC0B /* Preview Assets.xcassets */; };
 		A69935BD2BD77CC400F8BC0B /* nano1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935BC2BD77CC400F8BC0B /* nano1Tests.swift */; };
-<<<<<<< HEAD
 		DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */; };
 		DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */; };
-=======
 		DD99F0B82BD8D2D80000C72C /* music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD99F0B72BD8D2D80000C72C /* music1.mp3 */; };
->>>>>>> 466ebffc0669268e2b035a8f70754423382f7497
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +39,9 @@
 		A69935B32BD77CC400F8BC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69935B82BD77CC400F8BC0B /* nano1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nano1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69935BC2BD77CC400F8BC0B /* nano1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nano1Tests.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicView.swift; sourceTree = "<group>"; };
-=======
 		DD99F0B72BD8D2D80000C72C /* music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music1.mp3; path = ../../../../../Downloads/music1.mp3; sourceTree = "<group>"; };
->>>>>>> 466ebffc0669268e2b035a8f70754423382f7497
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
