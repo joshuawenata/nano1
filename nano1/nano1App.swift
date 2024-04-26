@@ -37,7 +37,7 @@ struct nano1App: App {
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "MountainCloudSpace") {
-            ImmersiveView(skyboxAssets: "mountain_cloud")
+            ImmersiveView(skyboxAssets: "mountain_cloud", bgMusic: "everest")
         }
         .immersionStyle(selection: $style, in: .full)
     }
