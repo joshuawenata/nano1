@@ -16,7 +16,6 @@
 		A69935CA2BD8BBA300F8BC0B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935C92BD8BBA300F8BC0B /* Card.swift */; };
 		A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935CC2BD8BC2400F8BC0B /* cardModel.swift */; };
 		A6A9E3502BDA059B0041E504 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9E34F2BDA059B0041E504 /* Object.swift */; };
-		A6A9E3552BDA175A0041E504 /* Wolf_with_Animations.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A6A9E3542BDA17590041E504 /* Wolf_with_Animations.usdz */; };
 		A6A9E4992BDA87160041E504 /* deer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A6A9E4982BDA87160041E504 /* deer.usdz */; };
 		DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */; };
 		DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */; };
@@ -49,8 +48,6 @@
 		A69935C92BD8BBA300F8BC0B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A69935CC2BD8BC2400F8BC0B /* cardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardModel.swift; sourceTree = "<group>"; };
 		A6A9E34F2BDA059B0041E504 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
-		A6A9E3542BDA17590041E504 /* Wolf_with_Animations.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Wolf_with_Animations.usdz; path = ../../../../Downloads/Wolf_with_Animations.usdz; sourceTree = "<group>"; };
-		A6A9E3562BDA175F0041E504 /* wolf.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wolf.usdz; sourceTree = "<group>"; };
 		A6A9E4982BDA87160041E504 /* deer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = deer.usdz; sourceTree = "<group>"; };
 		DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicView.swift; sourceTree = "<group>"; };
@@ -117,7 +114,6 @@
 		A69935A42BD77CC300F8BC0B /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				A6A9E3562BDA175F0041E504 /* wolf.usdz */,
 				A69935A52BD77CC300F8BC0B /* RealityKitContent */,
 			);
 			path = Packages;
@@ -134,7 +130,6 @@
 		A69935BB2BD77CC400F8BC0B /* nano1Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A6A9E3542BDA17590041E504 /* Wolf_with_Animations.usdz */,
 				A69935BC2BD77CC400F8BC0B /* nano1Tests.swift */,
 			);
 			path = nano1Tests;
@@ -280,7 +275,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6A9E3552BDA175A0041E504 /* Wolf_with_Animations.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
