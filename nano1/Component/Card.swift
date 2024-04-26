@@ -18,22 +18,26 @@ struct Card: View {
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
     
     var body: some View {
-        HStack {
-            Image(card.image)
-                .resizable()
-                .padding()
-                .frame(width: 200, height: 200)
-                .border(Color.white, width: 20)
+        HStack(alignment: .center) {
             
-            VStack {
+            ZStack {
+                VStack {
+                    Image(card.image)
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .cornerRadius(20)
+                }
+                .padding()
+                
                 Button(action: {
                     card.action()
                 }, label: {
-                    Text("Show Immersive Space")
+                    Image(systemName: "play.circle")
+                        .font(.system(size: 50))
                 })
+                .buttonStyle(PlainButtonStyle())
             }
-            .padding(.leading, 50)
-            .frame(width: 400)
+            
         }
         .padding(20)
         .background(Color.white.opacity(0.2))
