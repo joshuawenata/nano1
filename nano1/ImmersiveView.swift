@@ -51,9 +51,19 @@ struct ImmersiveView: View {
         
         do {
             player = try AVAudioPlayer(contentsOf: url)
+//            player?.delegate = self
             player?.play()
         } catch {
             print("Failed to play music: \(error)")
         }
     }
 }
+
+//extension ImmersiveView: AVAudioPlayerDelegate {
+//    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+//        if flag {
+//            // If music playback finishes, replay the music
+//            player.play()
+//        }
+//    }
+//}
