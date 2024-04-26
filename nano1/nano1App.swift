@@ -24,7 +24,7 @@ struct nano1App: App {
         .windowStyle(.plain)
 
         ImmersiveSpace(id: "WinterForestSpace") {
-            ImmersiveView(skyboxAssets: "winter_forest", bgMusic: "everest")
+            ImmersiveView(skyboxAssets: "winter_forest", bgMusic: "winter_forest")
                 .onAppear(){
                     openWindow(id: "deer")
                 }
@@ -32,17 +32,17 @@ struct nano1App: App {
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "MagicNightSpace") {
-            ImmersiveView(skyboxAssets: "magic_night", bgMusic: "music1")
+            ImmersiveView(skyboxAssets: "magic_night", bgMusic: "magic_night")
         }
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "MountainCloudSpace") {
-            ImmersiveView(skyboxAssets: "mountain_cloud", bgMusic: "everest")
+            ImmersiveView(skyboxAssets: "mountain_cloud", bgMusic: "mountain_cloud")
         }
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "BeachSpace") {
-            ImmersiveView(skyboxAssets: "beach", bgMusic: "everest")
+            ImmersiveView(skyboxAssets: "beach", bgMusic: "beach")
         }
         .immersionStyle(selection: $style, in: .full)
     }
