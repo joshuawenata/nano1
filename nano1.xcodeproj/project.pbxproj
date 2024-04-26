@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A69935A72BD77CC300F8BC0B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = A69935A62BD77CC300F8BC0B /* RealityKitContent */; };
 		A69935A92BD77CC300F8BC0B /* nano1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935A82BD77CC300F8BC0B /* nano1App.swift */; };
 		A69935AB2BD77CC300F8BC0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935AA2BD77CC300F8BC0B /* ContentView.swift */; };
 		A69935AD2BD77CC300F8BC0B /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935AC2BD77CC300F8BC0B /* ImmersiveView.swift */; };
@@ -22,6 +21,9 @@
 		A6A9E49C2BDA9D280041E504 /* hab_en.reality in Resources */ = {isa = PBXBuildFile; fileRef = A6A9E49B2BDA9D280041E504 /* hab_en.reality */; };
 		DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */; };
 		DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */; };
+		DD99F0B82BD8D2D80000C72C /* music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD99F0B72BD8D2D80000C72C /* music1.mp3 */; };
+		DDA3B4682BDA75A70078E9A9 /* everest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDA3B4672BDA75A60078E9A9 /* everest.mp3 */; };
+		DDA3B46A2BDA77500078E9A9 /* immersiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		A6A9E49B2BDA9D280041E504 /* hab_en.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = hab_en.reality; path = ../../../../../Downloads/hab_en.reality; sourceTree = "<group>"; };
 		DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicView.swift; sourceTree = "<group>"; };
+		DD99F0B72BD8D2D80000C72C /* music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music1.mp3; path = ../../../../../Downloads/music1.mp3; sourceTree = "<group>"; };
+		DDA3B4672BDA75A60078E9A9 /* everest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = everest.mp3; path = ../../../../../Downloads/everest.mp3; sourceTree = "<group>"; };
+		DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = immersiveModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A69935A72BD77CC300F8BC0B /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +101,7 @@
 		A69935A32BD77CC300F8BC0B /* nano1 */ = {
 			isa = PBXGroup;
 			children = (
+				DD99F0B32BD8D2850000C72C /* Music */,
 				A6A9E4972BDA75710041E504 /* ObjectUSDZ */,
 				A6A9E3512BDA0F470041E504 /* Pages */,
 				A69935CB2BD8BC0900F8BC0B /* Model */,
@@ -152,10 +157,18 @@
 			isa = PBXGroup;
 			children = (
 				A69935CC2BD8BC2400F8BC0B /* cardModel.swift */,
+				DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DD99F0B32BD8D2850000C72C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				DDA3B4672BDA75A60078E9A9 /* everest.mp3 */,
+				DD99F0B72BD8D2D80000C72C /* music1.mp3 */,
+			);
+			path = Music;
 		A6A9E3512BDA0F470041E504 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +202,6 @@
 			);
 			name = nano1;
 			packageProductDependencies = (
-				A69935A62BD77CC300F8BC0B /* RealityKitContent */,
 			);
 			productName = nano1;
 			productReference = A69935A12BD77CC300F8BC0B /* nano1.app */;
@@ -257,6 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69935B22BD77CC400F8BC0B /* Preview Assets.xcassets in Resources */,
+				DD99F0B82BD8D2D80000C72C /* music1.mp3 in Resources */,
+				A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */,
+				DDA3B4682BDA75A70078E9A9 /* everest.mp3 in Resources */,
 				A6A9E4992BDA87160041E504 /* deer.usdz in Resources */,
 				A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */,
 				A6A9E49C2BDA9D280041E504 /* hab_en.reality in Resources */,
@@ -280,6 +295,7 @@
 			files = (
 				A6A9E3502BDA059B0041E504 /* Object.swift in Sources */,
 				A69935AB2BD77CC300F8BC0B /* ContentView.swift in Sources */,
+				DDA3B46A2BDA77500078E9A9 /* immersiveModel.swift in Sources */,
 				A69935CA2BD8BBA300F8BC0B /* Card.swift in Sources */,
 				A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */,
 				A69935A92BD77CC300F8BC0B /* nano1App.swift in Sources */,
@@ -552,13 +568,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A69935A62BD77CC300F8BC0B /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A69935992BD77CC300F8BC0B /* Project object */;
 }

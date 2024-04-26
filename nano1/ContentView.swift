@@ -22,6 +22,7 @@ struct ContentView: View {
     @State private var showImmersiveSpace = false
     @State private var immersiveSpaceIsShown = false
     @State private var setSpace = ""
+    @State private var bgMusic = ""
 
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
@@ -94,7 +95,7 @@ struct ContentView: View {
                     } else if immersiveSpaceIsShown {
                         await dismissImmersiveSpace()
                         immersiveSpaceIsShown = false
-                        showImmersiveSpace.toggle()
+                        showImmersiveSpace = false
                     }
                 }
             }
