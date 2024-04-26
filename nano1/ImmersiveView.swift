@@ -12,6 +12,7 @@ import AVFoundation
 
 struct ImmersiveView: View {
     var skyboxAssets: String
+    var bgMusic: String
     @State var player: AVAudioPlayer?
 
     var body: some View {
@@ -43,7 +44,7 @@ struct ImmersiveView: View {
 
     private func playMusic() {
         print("Playing music...")
-        guard let url = Bundle.main.url(forResource: "music1", withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: bgMusic, withExtension: "mp3") else {
             print("Failed to find music file")
             return
         }

@@ -18,6 +18,8 @@
 		DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */; };
 		DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */; };
 		DD99F0B82BD8D2D80000C72C /* music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD99F0B72BD8D2D80000C72C /* music1.mp3 */; };
+		DDA3B4682BDA75A70078E9A9 /* everest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDA3B4672BDA75A60078E9A9 /* everest.mp3 */; };
+		DDA3B46A2BDA77500078E9A9 /* immersiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicView.swift; sourceTree = "<group>"; };
 		DD99F0B72BD8D2D80000C72C /* music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music1.mp3; path = ../../../../../Downloads/music1.mp3; sourceTree = "<group>"; };
+		DDA3B4672BDA75A60078E9A9 /* everest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = everest.mp3; path = ../../../../../Downloads/everest.mp3; sourceTree = "<group>"; };
+		DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = immersiveModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,14 +129,6 @@
 			path = nano1Tests;
 			sourceTree = "<group>";
 		};
-		DD99F0B32BD8D2850000C72C /* Music */ = {
-			isa = PBXGroup;
-			children = (
-				DD99F0B72BD8D2D80000C72C /* music1.mp3 */,
-			);
-			path = Music;
-            sourceTree = "<group>";
-        };
 		A69935C82BD8BB8800F8BC0B /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +143,18 @@
 			isa = PBXGroup;
 			children = (
 				A69935CC2BD8BC2400F8BC0B /* cardModel.swift */,
+				DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DD99F0B32BD8D2850000C72C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				DDA3B4672BDA75A60078E9A9 /* everest.mp3 */,
+				DD99F0B72BD8D2D80000C72C /* music1.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +243,7 @@
 				A69935B22BD77CC400F8BC0B /* Preview Assets.xcassets in Resources */,
 				DD99F0B82BD8D2D80000C72C /* music1.mp3 in Resources */,
 				A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */,
+				DDA3B4682BDA75A70078E9A9 /* everest.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69935AB2BD77CC300F8BC0B /* ContentView.swift in Sources */,
+				DDA3B46A2BDA77500078E9A9 /* immersiveModel.swift in Sources */,
 				A69935CA2BD8BBA300F8BC0B /* Card.swift in Sources */,
 				A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */,
 				A69935A92BD77CC300F8BC0B /* nano1App.swift in Sources */,
