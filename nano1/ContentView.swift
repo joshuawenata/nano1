@@ -29,11 +29,11 @@ struct ContentView: View {
     
     var arraydata: [[String: String]] = [
         ["image": "winter_forest_placeholder", "space": "WinterForestSpace"],
-        ["image": "magic_night_placeholder", "space": "MagicNightSpace"],
+        ["image": "beach_placeholder", "space": "BeachSpace"],
         ["image": "mountain_cloud_placeholder", "space": "MountainCloudSpace"],
-        ["image": "winter_forest_placeholder", "space": "WinterForestSpace"],
-        ["image": "winter_forest_placeholder", "space": "WinterForestSpace"],
-        ["image": "winter_forest_placeholder", "space": "WinterForestSpace"],
+        ["image": "magic_night_placeholder", "space": "MagicNightSpace"],
+        ["image": "island_placeholder", "space": "WinterForestSpace"],
+        ["image": "forest_house_placeholder", "space": "WinterForestSpace"],
     ]
 
     var body: some View {
