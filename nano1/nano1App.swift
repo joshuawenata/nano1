@@ -16,33 +16,24 @@ struct nano1App: App {
         WindowGroup(id: "Main"){
             ContentView()
         }
-    
-        WindowGroup(id: "deer"){
-            Object(name: "deer", size: 0.7)
-                .transformEffect(.init(translationX: 400, y: 100))
-        }
-        .windowStyle(.plain)
 
         ImmersiveSpace(id: "WinterForestSpace") {
-            ImmersiveView(skyboxAssets: "winter_forest", bgMusic: "winter_forest")
-                .onAppear(){
-                    openWindow(id: "deer")
-                }
+            ImmersiveView(skyboxAssets: "winter_forest", bgMusic: "winter_forest", object: StaticObject(name: "Deer").makeEntity()!)
         }
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "MagicNightSpace") {
-            ImmersiveView(skyboxAssets: "magic_night", bgMusic: "magic_night")
+            ImmersiveView(skyboxAssets: "magic_night", bgMusic: "magic_night", object: StaticObject(name: "Bird").makeEntity()!)
         }
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "MountainCloudSpace") {
-            ImmersiveView(skyboxAssets: "mountain_cloud", bgMusic: "mountain_cloud")
+            ImmersiveView(skyboxAssets: "mountain_cloud", bgMusic: "mountain_cloud", object: StaticObject(name: "Dragon").makeEntity()!)
         }
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "BeachSpace") {
-            ImmersiveView(skyboxAssets: "beach", bgMusic: "beach")
+            ImmersiveView(skyboxAssets: "beach", bgMusic: "beach", object: StaticObject(name: "Bird").makeEntity()!)
         }
         .immersionStyle(selection: $style, in: .full)
     }

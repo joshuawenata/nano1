@@ -7,7 +7,6 @@
 
 import SwiftUI
 import RealityKit
-import RealityKitContent
 
 extension Array {
     func chunked(into size: Int) -> [[Element]] {
