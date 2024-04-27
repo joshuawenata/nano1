@@ -7,12 +7,12 @@
 
 import SwiftUI
 import RealityKit
-import RealityKitContent
 import AVFoundation
 
 struct ImmersiveView: View {
     var skyboxAssets: String
     var bgMusic: String
+    var object: Entity
     @State var player: AVAudioPlayer?
 
     var body: some View {
@@ -20,6 +20,7 @@ struct ImmersiveView: View {
             playMusic()
             let skybox = createSkybox()
             content.add(skybox!)
+            content.add(object)
         }
     }
 
@@ -41,7 +42,7 @@ struct ImmersiveView: View {
         skyboxEntity.scale = .init(x: -1, y: 1, z: 1)
         return skyboxEntity
     }
-
+    
     private func playMusic() {
         print("Playing music...")
         guard let url = Bundle.main.url(forResource: bgMusic, withExtension: "mp3") else {
