@@ -14,6 +14,7 @@ struct ImmersiveView: View {
     var bgMusic: String
     var object: Entity
     @State var player: AVAudioPlayer?
+    var sceneShowing: String
 
     var body: some View {
         RealityView { content in
@@ -22,7 +23,9 @@ struct ImmersiveView: View {
             content.add(skybox!)
             content.add(object)
         }
+        
     }
+    
 
     private func createSkybox() -> Entity? {
         let largeSphere = MeshResource.generateSphere(radius: 2)

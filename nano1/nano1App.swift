@@ -18,23 +18,26 @@ struct nano1App: App {
         }
 
         ImmersiveSpace(id: "WinterForestSpace") {
-            ImmersiveView(skyboxAssets: "winter_forest", bgMusic: "winter_forest", object: StaticObject(name: "Deer").makeEntity()!)
+            ImmersiveView(skyboxAssets: "winter_forest", bgMusic: "winter_forest", object: StaticObject(name: "Deer").makeEntity()!, sceneShowing: "winterForest")
+            
+            
         }
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "MagicNightSpace") {
-            ImmersiveView(skyboxAssets: "magic_night", bgMusic: "magic_night", object: StaticObject(name: "Bird").makeEntity()!)
+            ImmersiveView(skyboxAssets: "magic_night", bgMusic: "magic_night", object: StaticObject(name: "Bird").makeEntity()!, sceneShowing: "magicNight")
         }
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "MountainCloudSpace") {
-            ImmersiveView(skyboxAssets: "mountain_cloud", bgMusic: "mountain_cloud", object: StaticObject(name: "Dragon").makeEntity()!)
+            ImmersiveView(skyboxAssets: "mountain_cloud", bgMusic: "mountain_cloud", object: StaticObject(name: "Dragon").makeEntity()!, sceneShowing: "mountainCloud")
         }
         .immersionStyle(selection: $style, in: .full)
         
         ImmersiveSpace(id: "BeachSpace") {
-            ImmersiveView(skyboxAssets: "beach", bgMusic: "beach", object: StaticObject(name: "Bird").makeEntity()!)
+            ImmersiveView(skyboxAssets: "beach", bgMusic: "beach", object: StaticObject(name: "Bird").makeEntity()!, sceneShowing: "beach")
         }
         .immersionStyle(selection: $style, in: .full)
     }
+    
 }
