@@ -40,6 +40,7 @@
 		DDA3B46A2BDA77500078E9A9 /* immersiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */; };
 		DDFC4EBA2BDE8E2500107F35 /* dragonRoar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */; };
 		DDFC4EC02BDF345F00107F35 /* Sunlight.skybox in Resources */ = {isa = PBXBuildFile; fileRef = DDFC4EBF2BDF345F00107F35 /* Sunlight.skybox */; };
+		DDFC4EC32BDF4C1500107F35 /* PlayAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC4EC22BDF4C1500107F35 /* PlayAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = immersiveModel.swift; sourceTree = "<group>"; };
 		DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dragonRoar.mp3; sourceTree = "<group>"; };
 		DDFC4EBF2BDF345F00107F35 /* Sunlight.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Sunlight.skybox; sourceTree = "<group>"; };
+		DDFC4EC22BDF4C1500107F35 /* PlayAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		A69935A32BD77CC300F8BC0B /* nano1 */ = {
 			isa = PBXGroup;
 			children = (
+				DDFC4EC12BDF4C0200107F35 /* Utils */,
 				DDFC4EBE2BDF33F200107F35 /* Resources */,
 				DA00F6D52BDDEAAF001C314B /* ViewModel */,
 				DD1358D72BDB641A0021BEA4 /* Music */,
@@ -254,6 +257,14 @@
 				DDFC4EBF2BDF345F00107F35 /* Sunlight.skybox */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDFC4EC12BDF4C0200107F35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DDFC4EC22BDF4C1500107F35 /* PlayAudio.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +401,7 @@
 				DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */,
 				A69935AD2BD77CC300F8BC0B /* ImmersiveView.swift in Sources */,
 				DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */,
+				DDFC4EC32BDF4C1500107F35 /* PlayAudio.swift in Sources */,
 				DA00F6E62BDE37BF001C314B /* AmbientSoundsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

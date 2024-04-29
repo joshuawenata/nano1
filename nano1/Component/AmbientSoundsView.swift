@@ -11,7 +11,6 @@ import AVFAudio
 let myScene = Scenes.winterForest
 
 struct AmbientSoundViewModel: View {
-    
     var body: some View {
         
         ambientSoundsView(
@@ -20,8 +19,8 @@ struct AmbientSoundViewModel: View {
             icon3: "water.waves",
             sound1: "beach",
             sound2: "magic_night",
-            sound3: "winter_forest")
-        
+            sound3: "winter_forest"
+        )
     }
 }
 
@@ -31,7 +30,6 @@ struct AmbientSoundViewModel: View {
 
 
 struct ambientSoundsView: View {
-    
     @State var player: AVAudioPlayer?
     
     var icon1, icon2, icon3: String
@@ -40,47 +38,22 @@ struct ambientSoundsView: View {
     var body: some View {
         HStack {
             Button(action: {
-                //insert sounds here
-                playAmbientSound(ambientSound: sound1)
-                
+                funcPlayAudio(ambientSound: sound1)
             }, label: {
                 Image(systemName: icon1)
             })
             
             Button(action: {
-                //insert sounds here
-                playAmbientSound(ambientSound: sound2)
+                funcPlayAudio(ambientSound: sound2)
             }, label: {
                 Image(systemName: icon2)
             })
             
             Button(action: {
-                //insert sounds here
-                playAmbientSound(ambientSound: sound3)
+                funcPlayAudio(ambientSound: sound3)
             }, label: {
                 Image(systemName: icon3)
             })
         }
     }
-    
-    //audioplayer
-    func playAmbientSound(ambientSound: String) {
-
-        print("Playing sound...")
-        guard let url = Bundle.main.url(forResource: ambientSound, withExtension: "mp3") else {
-            print("Failed to find sound file")
-            return
-        }
-        
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            player?.play()
-        } catch {
-            print("Failed to play music: \(error)")
-        }
-    }
 }
-
-
-
-

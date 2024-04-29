@@ -19,8 +19,6 @@ struct nano1App: App {
 
         ImmersiveSpace(id: "WinterForestSpace") {
             ImmersiveView(skyboxAssets: "winter_forest", bgMusic: "winter_forest", object: StaticObject(name: "Deer").makeEntity()!, sceneShowing: "winterForest")
-            
-            
         }
         .immersionStyle(selection: $style, in: .full)
         

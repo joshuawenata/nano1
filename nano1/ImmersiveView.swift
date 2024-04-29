@@ -18,7 +18,7 @@ struct ImmersiveView: View {
 
     var body: some View {
         RealityView { content in
-            playMusic()
+            funcPlayAudio(ambientSound: bgMusic)
             let skybox = createSkybox()
             content.add(skybox!)
             content.add(object)
@@ -54,43 +54,4 @@ struct ImmersiveView: View {
         skyboxEntity.scale = .init(x: -1, y: 1, z: 1)
         return skyboxEntity
     }
-    
-    private func playAudio(_ audioName: String) {
-        guard let url = Bundle.main.url(forResource: audioName, withExtension: "mp3") else {
-            print("Failed to find audio file")
-            return
-        }
-        
-        do {
-            let audioPlayer = try AVAudioPlayer(contentsOf: url)
-            audioPlayer.play()
-        } catch {
-            print("Failed to play audio: \(error)")
-        }
-    }
-    
-    private func playMusic() {
-        print("Playing music...")
-        guard let url = Bundle.main.url(forResource: bgMusic, withExtension: "mp3") else {
-            print("Failed to find music file")
-            return
-        }
-        
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            //            player?.delegate = self
-            player?.play()
-        } catch {
-            print("Failed to play music: \(error)")
-        }
-    }
 }
-
-//extension ImmersiveView: AVAudioPlayerDelegate {
-//    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-//        if flag {
-//            // If music playback finishes, replay the music
-//            player.play()
-//        }
-//    }
-//}
