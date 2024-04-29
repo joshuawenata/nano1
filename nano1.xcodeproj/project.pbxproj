@@ -21,6 +21,18 @@
 		A6E9AE312BDB6CED00652C98 /* mountain_cloud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6E9AE2F2BDB6CED00652C98 /* mountain_cloud.mp3 */; };
 		A6E9AE322BDB6CED00652C98 /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6E9AE302BDB6CED00652C98 /* beach.mp3 */; };
 		A6E9AE3C2BDCE49700652C98 /* WindowObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9AE3B2BDCE49700652C98 /* WindowObject.swift */; };
+		DA00F6D42BDDDC61001C314B /* ambientSoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00F6D32BDDDC61001C314B /* ambientSoundModel.swift */; };
+		DA00F6D72BDDEAC0001C314B /* AmbientSoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00F6D62BDDEAC0001C314B /* AmbientSoundViewModel.swift */; };
+		DA00F6DD2BDE018E001C314B /* footstep_onSnowmp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6DC2BDE018E001C314B /* footstep_onSnowmp3.mp3 */; };
+		DA00F6E62BDE37BF001C314B /* AmbientSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00F6E52BDE37BF001C314B /* AmbientSoundsView.swift */; };
+		DA00F6E82BDE46E9001C314B /* winter_wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6E72BDE46E9001C314B /* winter_wind.mp3 */; };
+		DA00F6EA2BDE46F3001C314B /* ice_cracking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6E92BDE46F3001C314B /* ice_cracking.mp3 */; };
+		DA00F6EC2BDE4880001C314B /* snow_storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6EB2BDE4880001C314B /* snow_storm.mp3 */; };
+		DA00F6F02BDE4E32001C314B /* birds_singing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6ED2BDE4E25001C314B /* birds_singing.mp3 */; };
+		DA00F6F12BDE4E32001C314B /* palm_tree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6EE2BDE4E2F001C314B /* palm_tree.mp3 */; };
+		DA00F6F22BDE4E32001C314B /* ocean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6EF2BDE4E32001C314B /* ocean.mp3 */; };
+		DA00F6F42BDE52B7001C314B /* water_flow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6F32BDE52B7001C314B /* water_flow.mp3 */; };
+		DA00F6F82BDE7F72001C314B /* cold_wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA00F6F72BDE7F72001C314B /* cold_wind.mp3 */; };
 		DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */; };
 		DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */; };
 		DD1358DA2BDB643C0021BEA4 /* magic_night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD1358D82BDB643C0021BEA4 /* magic_night.mp3 */; };
@@ -58,6 +70,18 @@
 		A6E9AE2F2BDB6CED00652C98 /* mountain_cloud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mountain_cloud.mp3; sourceTree = "<group>"; };
 		A6E9AE302BDB6CED00652C98 /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
 		A6E9AE3B2BDCE49700652C98 /* WindowObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowObject.swift; sourceTree = "<group>"; };
+		DA00F6D32BDDDC61001C314B /* ambientSoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ambientSoundModel.swift; sourceTree = "<group>"; };
+		DA00F6D62BDDEAC0001C314B /* AmbientSoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundViewModel.swift; sourceTree = "<group>"; };
+		DA00F6DC2BDE018E001C314B /* footstep_onSnowmp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = footstep_onSnowmp3.mp3; path = nano1/Music/AmbientSounds/footstep_onSnowmp3.mp3; sourceTree = SOURCE_ROOT; };
+		DA00F6E52BDE37BF001C314B /* AmbientSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundsView.swift; sourceTree = "<group>"; };
+		DA00F6E72BDE46E9001C314B /* winter_wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winter_wind.mp3; sourceTree = "<group>"; };
+		DA00F6E92BDE46F3001C314B /* ice_cracking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ice_cracking.mp3; sourceTree = "<group>"; };
+		DA00F6EB2BDE4880001C314B /* snow_storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snow_storm.mp3; sourceTree = "<group>"; };
+		DA00F6ED2BDE4E25001C314B /* birds_singing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birds_singing.mp3; sourceTree = "<group>"; };
+		DA00F6EE2BDE4E2F001C314B /* palm_tree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = palm_tree.mp3; sourceTree = "<group>"; };
+		DA00F6EF2BDE4E32001C314B /* ocean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ocean.mp3; sourceTree = "<group>"; };
+		DA00F6F32BDE52B7001C314B /* water_flow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = water_flow.mp3; sourceTree = "<group>"; };
+		DA00F6F72BDE7F72001C314B /* cold_wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cold_wind.mp3; sourceTree = "<group>"; };
 		DA1727C42BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		DA1727C62BD81EA900241BE1 /* BackgroundMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicView.swift; sourceTree = "<group>"; };
 		DD1358D82BDB643C0021BEA4 /* magic_night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magic_night.mp3; sourceTree = "<group>"; };
@@ -109,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				DDFC4EBE2BDF33F200107F35 /* Resources */,
+				DA00F6D52BDDEAAF001C314B /* ViewModel */,
 				DD1358D72BDB641A0021BEA4 /* Music */,
 				A6A9E4972BDA75710041E504 /* ObjectUSDZ */,
 				A6A9E3512BDA0F470041E504 /* Pages */,
@@ -156,6 +181,7 @@
 				A69935C92BD8BBA300F8BC0B /* Card.swift */,
 				A6A9E34F2BDA059B0041E504 /* StaticObject.swift */,
 				A6E9AE3B2BDCE49700652C98 /* WindowObject.swift */,
+				DA00F6E52BDE37BF001C314B /* AmbientSoundsView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -165,6 +191,7 @@
 			children = (
 				A69935CC2BD8BC2400F8BC0B /* cardModel.swift */,
 				DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */,
+				DA00F6D32BDDDC61001C314B /* ambientSoundModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,10 +211,35 @@
 			path = ObjectUSDZ;
 			sourceTree = "<group>";
 		};
+		DA00F6D52BDDEAAF001C314B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA00F6D62BDDEAC0001C314B /* AmbientSoundViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA00F6E22BDE35FE001C314B /* AmbientSounds */ = {
+			isa = PBXGroup;
+			children = (
+				DA00F6F72BDE7F72001C314B /* cold_wind.mp3 */,
+				DA00F6ED2BDE4E25001C314B /* birds_singing.mp3 */,
+				DA00F6EF2BDE4E32001C314B /* ocean.mp3 */,
+				DA00F6EE2BDE4E2F001C314B /* palm_tree.mp3 */,
+				DA00F6F32BDE52B7001C314B /* water_flow.mp3 */,
+				DA00F6E92BDE46F3001C314B /* ice_cracking.mp3 */,
+				DA00F6E72BDE46E9001C314B /* winter_wind.mp3 */,
+				DA00F6DC2BDE018E001C314B /* footstep_onSnowmp3.mp3 */,
+				DA00F6EB2BDE4880001C314B /* snow_storm.mp3 */,
+			);
+			path = AmbientSounds;
+			sourceTree = "<group>";
+		};
 		DD1358D72BDB641A0021BEA4 /* Music */ = {
 			isa = PBXGroup;
 			children = (
 				DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */,
+				DA00F6E22BDE35FE001C314B /* AmbientSounds */,
 				DD1358D92BDB643C0021BEA4 /* winter_forest.mp3 */,
 				DD1358D82BDB643C0021BEA4 /* magic_night.mp3 */,
 				A6E9AE302BDB6CED00652C98 /* beach.mp3 */,
@@ -291,12 +343,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA00F6EA2BDE46F3001C314B /* ice_cracking.mp3 in Resources */,
+				DA00F6EC2BDE4880001C314B /* snow_storm.mp3 in Resources */,
+				DA00F6F42BDE52B7001C314B /* water_flow.mp3 in Resources */,
 				A6E9AE322BDB6CED00652C98 /* beach.mp3 in Resources */,
+				DA00F6F12BDE4E32001C314B /* palm_tree.mp3 in Resources */,
 				A69935B22BD77CC400F8BC0B /* Preview Assets.xcassets in Resources */,
+				DA00F6F22BDE4E32001C314B /* ocean.mp3 in Resources */,
+				DA00F6E82BDE46E9001C314B /* winter_wind.mp3 in Resources */,
+				DA00F6F82BDE7F72001C314B /* cold_wind.mp3 in Resources */,
 				A6E9AE312BDB6CED00652C98 /* mountain_cloud.mp3 in Resources */,
 				DDFC4EBA2BDE8E2500107F35 /* dragonRoar.mp3 in Resources */,
+				DA00F6DD2BDE018E001C314B /* footstep_onSnowmp3.mp3 in Resources */,
 				A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */,
 				DD1358DA2BDB643C0021BEA4 /* magic_night.mp3 in Resources */,
+				DA00F6F02BDE4E32001C314B /* birds_singing.mp3 in Resources */,
 				DD1358DB2BDB643C0021BEA4 /* winter_forest.mp3 in Resources */,
 				DDFC4EC02BDF345F00107F35 /* Sunlight.skybox in Resources */,
 				A67C9B4B2BDD2081007789DE /* Package.realitycomposerpro in Resources */,
@@ -319,6 +380,8 @@
 			files = (
 				A6A9E3502BDA059B0041E504 /* StaticObject.swift in Sources */,
 				A69935AB2BD77CC300F8BC0B /* ContentView.swift in Sources */,
+				DA00F6D72BDDEAC0001C314B /* AmbientSoundViewModel.swift in Sources */,
+				DA00F6D42BDDDC61001C314B /* ambientSoundModel.swift in Sources */,
 				DDA3B46A2BDA77500078E9A9 /* immersiveModel.swift in Sources */,
 				A69935CA2BD8BBA300F8BC0B /* Card.swift in Sources */,
 				A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */,
@@ -327,6 +390,7 @@
 				DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */,
 				A69935AD2BD77CC300F8BC0B /* ImmersiveView.swift in Sources */,
 				DA1727C52BD81BDC00241BE1 /* DismissImmersiveSpaceButton.swift in Sources */,
+				DA00F6E62BDE37BF001C314B /* AmbientSoundsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +555,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 1.1;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -518,7 +582,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 1.1;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};

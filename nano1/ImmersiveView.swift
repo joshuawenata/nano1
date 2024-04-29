@@ -14,7 +14,8 @@ struct ImmersiveView: View {
     var bgMusic: String
     var object: Entity
     @State var player: AVAudioPlayer?
-    
+    var sceneShowing: String
+
     var body: some View {
         RealityView { content in
             playMusic()
@@ -32,6 +33,7 @@ struct ImmersiveView: View {
             object.components.set(iblComponent)
             object.components.set(ImageBasedLightReceiverComponent(imageBasedLight: object))
         }
+        
     }
     
     private func createSkybox() -> Entity? {
