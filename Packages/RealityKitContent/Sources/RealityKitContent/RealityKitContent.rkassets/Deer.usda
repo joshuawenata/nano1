@@ -5,20 +5,67 @@
     upAxis = "Y"
 )
 
+reorder rootPrims = ["Root", "Deer"]
+
 def Xform "Root"
 {
-    reorder nameChildren = ["GridMaterial", "Sphere"]
+    reorder nameChildren = ["GridMaterial", "snow", "snow_1", "deer"]
     rel material:binding = None (
         bindMaterialAs = "weakerThanDescendants"
     )
 
     def "GridMaterial" (
         active = true
-        prepend references = @Materials/GridMaterial.usda@
+        references = @Materials/GridMaterial.usda@
     )
     {
         float3 xformOp:scale = (1, 1, 1)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "snow" (
+        active = true
+        references = @snow.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (-0.37124777, -1.2448237, -0.8408499)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "snow_1" (
+        active = true
+        references = @snow.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (2.5060315, -0.80358887, -0.7905527)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "Snowflake"
+            {
+                token outputs:surface.connect = </Root/snow_1/Materials/Snowflake/pbr_shader.outputs:surface>
+
+                over "pbr_shader"
+                {
+                    color3f inputs:diffuseColor.connect = </Root/snow_1/Materials/Snowflake/tex_opacity.outputs:rgb>
+                    color3f inputs:emissiveColor.connect = </Root/snow_1/Materials/Snowflake/tex_emissive.outputs:rgb>
+                    float inputs:opacity.connect = </Root/snow_1/Materials/Snowflake/tex_opacity.outputs:a>
+                }
+
+                over "tex_emissive"
+                {
+                    float2 inputs:st.connect = </Root/snow_1/Materials/Snowflake/uvset0.outputs:result>
+                }
+
+                over "tex_opacity"
+                {
+                    float2 inputs:st.connect = </Root/snow_1/Materials/Snowflake/uvset0.outputs:result>
+                }
+            }
+        }
     }
 
     def "deer" (
@@ -26,12 +73,12 @@ def Xform "Root"
         customData = {
             float3 rotationEulerHint = (0, -0.69813174, 0)
         }
-        prepend references = @deer.usdz@
+        references = @Deer (1).usdz@
     )
     {
         quatf xformOp:orient = (0.9396926, 0, -0.34202012, 0)
-        float3 xformOp:scale = (0.002, 0.002, 0.002)
-        float3 xformOp:translate = (0.6, 1.3, -0.8)
+        float3 xformOp:scale = (0.005, 0.005, 0.005)
+        float3 xformOp:translate = (0.6, 1.1, -0.8)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
 }
