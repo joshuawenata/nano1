@@ -48,6 +48,7 @@ struct ambientSoundsView: View {
                 toggleAudio(audioNumber: 1)
             }, label: {
                 Image(systemName: icon1)
+                    .font(.system(size: 30))
             })
             .colorMultiply(backgroundColor1)
             
@@ -55,6 +56,7 @@ struct ambientSoundsView: View {
                 toggleAudio(audioNumber: 2)
             }, label: {
                 Image(systemName: icon2)
+                    .font(.system(size: 30))
             })
             .colorMultiply(backgroundColor2)
             
@@ -62,6 +64,7 @@ struct ambientSoundsView: View {
                 toggleAudio(audioNumber: 3)
             }, label: {
                 Image(systemName: icon3)
+                    .font(.system(size: 30))
             })
             .colorMultiply(backgroundColor3)
         }

@@ -70,7 +70,8 @@ struct SoundPage: View {
         } label: {
             Image(systemName: "arrowshape.backward.circle.fill")
                 .colorMultiply(.white)
-                .frame(width: 150, height: 50)
+                .frame(width: 200, height: 50)
+                .font(.system(size: 30))
         }
         .padding(.top, 30)
     }
