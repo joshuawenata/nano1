@@ -36,5 +36,15 @@ def Xform "Root"
         float3 xformOp:translate = (0.6, 1.3, -0.8)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
+
+    def "Ball" (
+        active = true
+        prepend references = @Ball.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.005, 0.005, 0.005)
+        float3 xformOp:translate = (-0.25, 1.5, -0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
 }
 

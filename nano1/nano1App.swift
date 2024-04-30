@@ -1,26 +1,28 @@
-//
-//  nano1App.swift
-//  nano1
-//
-//  Created by Joshua Wenata Sunarto on 23/04/24.
-//
-
 import SwiftUI
 
 @main
 struct nano1App: App {
     @Environment(\.openWindow) var openWindow
-    @State private var style: ImmersionStyle = .full
+    @Environment(\.dismiss) private var dismiss
+    
+    @State var showImmersiveSpace = false
+    @State var immersiveSpaceIsShown = false
+    @State var setSpace: String = ""
+    @State var bgMusic: String = ""
+    @State var immersiveSpaceId: String = ""
+    @State var style: ImmersionStyle = .full
     
     var body: some Scene {
-        WindowGroup(id: "Main"){
-            ContentView()
+        WindowGroup(id: "Main") {
+            ContentView(showImmersiveSpace: $showImmersiveSpace,
+                        immersiveSpaceIsShown: $immersiveSpaceIsShown,
+                        setSpace: $setSpace,
+                        bgMusic: $bgMusic,
+                        immersiveSpaceId: $immersiveSpaceId)
         }
-
+        
         ImmersiveSpace(id: "WinterForestSpace") {
             ImmersiveView(skyboxAssets: "winter_forest", bgMusic: "winter_forest", object: StaticObject(name: "Deer").makeEntity()!, sceneShowing: "winterForest")
-            
-            
         }
         .immersionStyle(selection: $style, in: .full)
         
@@ -39,5 +41,4 @@ struct nano1App: App {
         }
         .immersionStyle(selection: $style, in: .full)
     }
-    
 }

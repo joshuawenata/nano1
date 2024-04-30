@@ -10,13 +10,6 @@ import SwiftUI
 struct Card: View {
     var card: CardModel
     
-    @State private var showImmersiveSpace = false
-    @State private var immersiveSpaceIsShown = false
-    @State private var setSpace = ""
-
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
-    
     var body: some View {
         HStack(alignment: .center) {
             
@@ -27,7 +20,6 @@ struct Card: View {
                         .frame(width: 200, height: 200)
                         .cornerRadius(20)
                 }
-                .padding()
                 
                 Button(action: {
                     card.action()
@@ -39,9 +31,6 @@ struct Card: View {
             }
             
         }
-        .padding(20)
-        .background(Color.white.opacity(0.2))
-        .cornerRadius(20)
         .shadow(radius: 5)
     }
 }
