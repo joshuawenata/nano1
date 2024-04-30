@@ -24,7 +24,7 @@ struct Card: View {
                 Button(action: {
                     card.action()
                 }, label: {
-                    Image(systemName: "play.circle")
+                    Image(systemName: "play.circle.fill")
                         .font(.system(size: 50))
                 })
                 .buttonStyle(PlainButtonStyle())
