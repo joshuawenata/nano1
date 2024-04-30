@@ -25,14 +25,19 @@ struct AmbientSoundViewModel: View {
     }
 }
 
-#Preview {
-    AmbientSoundViewModel()
-}
-
-
 struct ambientSoundsView: View {
     
-    @State var player: AVAudioPlayer?
+    @State var player1: AVAudioPlayer?
+    @State var player2: AVAudioPlayer?
+    @State var player3: AVAudioPlayer?
+    
+    @State private var isPlaying1 = false
+    @State private var isPlaying2 = false
+    @State private var isPlaying3 = false
+    
+    @State private var backgroundColor1 = Color.gray
+    @State private var backgroundColor2 = Color.gray
+    @State private var backgroundColor3 = Color.gray
     
     var icon1, icon2, icon3: String
     var sound1, sound2, sound3: String
@@ -40,47 +45,79 @@ struct ambientSoundsView: View {
     var body: some View {
         HStack {
             Button(action: {
-                //insert sounds here
-                playAmbientSound(ambientSound: sound1)
-                
+                toggleAudio(audioNumber: 1)
             }, label: {
                 Image(systemName: icon1)
             })
+            .colorMultiply(backgroundColor1)
             
             Button(action: {
-                //insert sounds here
-                playAmbientSound(ambientSound: sound2)
+                toggleAudio(audioNumber: 2)
             }, label: {
                 Image(systemName: icon2)
             })
+            .colorMultiply(backgroundColor2)
             
             Button(action: {
-                //insert sounds here
-                playAmbientSound(ambientSound: sound3)
+                toggleAudio(audioNumber: 3)
             }, label: {
                 Image(systemName: icon3)
             })
+            .colorMultiply(backgroundColor3)
+        }
+        .onAppear {
+            loadAudio()
         }
     }
     
-    //audioplayer
-    func playAmbientSound(ambientSound: String) {
-
-        print("Playing sound...")
-        guard let url = Bundle.main.url(forResource: ambientSound, withExtension: "mp3") else {
-            print("Failed to find sound file")
+    func loadAudio() {
+        guard let url1 = Bundle.main.url(forResource: sound1, withExtension: "mp3"),
+              let url2 = Bundle.main.url(forResource: sound2, withExtension: "mp3"),
+              let url3 = Bundle.main.url(forResource: sound3, withExtension: "mp3") else {
+            print("Failed to find sound files")
             return
         }
         
         do {
-            player = try AVAudioPlayer(contentsOf: url)
-            player?.play()
+            player1 = try AVAudioPlayer(contentsOf: url1)
+            player2 = try AVAudioPlayer(contentsOf: url2)
+            player3 = try AVAudioPlayer(contentsOf: url3)
         } catch {
-            print("Failed to play music: \(error)")
+            print("Failed to load audio: \(error)")
+        }
+    }
+    
+    func toggleAudio(audioNumber: Int) {
+        switch audioNumber {
+        case 1:
+            if isPlaying1 {
+                player1?.stop()
+                backgroundColor1 = Color.gray
+            } else {
+                player1?.play()
+                backgroundColor1 = Color.white
+            }
+            isPlaying1.toggle()
+        case 2:
+            if isPlaying2 {
+                player2?.stop()
+                backgroundColor2 = Color.gray
+            } else {
+                player2?.play()
+                backgroundColor2 = Color.white
+            }
+            isPlaying2.toggle()
+        case 3:
+            if isPlaying3 {
+                player3?.stop()
+                backgroundColor3 = Color.gray
+            } else {
+                player3?.play()
+                backgroundColor3 = Color.white
+            }
+            isPlaying3.toggle()
+        default:
+            break
         }
     }
 }
-
-
-
-

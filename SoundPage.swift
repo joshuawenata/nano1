@@ -68,7 +68,9 @@ struct SoundPage: View {
                 showImmersiveSpace.toggle()
             }
         } label: {
-            Text("Close immersive space")
+            Image(systemName: "arrowshape.backward.circle.fill")
+                .colorMultiply(.white)
+                .frame(width: 150, height: 50)
         }
         .padding(.top, 30)
     }
