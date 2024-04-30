@@ -16,12 +16,12 @@ extension Array {
 }
 
 var arraydata: [[String: String]] = [
-    ["image": "winter_forest_placeholder", "space": "WinterForestSpace"],
-    ["image": "beach_placeholder", "space": "BeachSpace"],
-    ["image": "mountain_cloud_placeholder", "space": "MountainCloudSpace"],
-    ["image": "magic_night_placeholder", "space": "MagicNightSpace"],
-    ["image": "island_placeholder", "space": "WinterForestSpace"],
-    ["image": "forest_house_placeholder", "space": "WinterForestSpace"],
+    ["image": "winter_forest_placeholder", "space": "WinterForestSpace", "status": "available"],
+    ["image": "beach_placeholder", "space": "BeachSpace", "status": "available"],
+    ["image": "mountain_cloud_placeholder", "space": "MountainCloudSpace", "status": "available"],
+    ["image": "magic_night_placeholder", "space": "MagicNightSpace","status": "comingSoon"],
+    ["image": "island_placeholder", "space": "WinterForestSpace", "status": "comingSoon"],
+    ["image": "forest_house_placeholder", "space": "WinterForestSpace", "status": "comingSoon"],
 ]
 
 struct MainPage: View {
@@ -40,16 +40,33 @@ struct MainPage: View {
             ForEach(arraydata.chunked(into: 3), id: \.self) { chunk in
                 HStack {
                     ForEach(chunk, id: \.self) { data in
-                        Card(
-                            card: CardModel(
-                                image: data["image"]!,
-                                action: {
-                                    setSpace = data["space"]!
-                                    showImmersiveSpace.toggle()
-                                }
+                        
+                        if data["status"] == "available" {
+                            Card(
+                                card: CardModel(
+                                    image: data["image"]!,
+                                    action: {
+                                        setSpace = data["space"]!
+                                        showImmersiveSpace.toggle()
+                                    }
+                                )
                             )
-                        )
-                        .padding(20)
+                            .padding(20)
+                            
+                        } else {
+                            Card(
+                                card: CardModel(
+                                    image: data["image"]!,
+                                    action: {
+//                                        setSpace = data["space"]!
+//                                        showImmersiveSpace.toggle()
+                                    }
+                                )
+                            )
+                            .opacity(0.5)
+                            .padding(20)
+                        }
+                        
                     }
                 }
             }
