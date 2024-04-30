@@ -70,7 +70,6 @@ struct ImmersiveView: View {
     }
     
     private func playMusic() {
-        print("Playing music...")
         guard let url = Bundle.main.url(forResource: bgMusic, withExtension: "mp3") else {
             print("Failed to find music file")
             return
