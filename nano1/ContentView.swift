@@ -33,7 +33,6 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            
             Image("background")
                 .scaledToFill()
                 .opacity(0.5)
