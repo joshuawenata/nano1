@@ -63,6 +63,7 @@ struct SoundPage: View {
         
         Button {
             Task {
+                stopAllPlayers()
                 await dismissImmersiveSpace()
                 immersiveSpaceIsShown = false
                 showImmersiveSpace.toggle()

@@ -20,7 +20,6 @@
 		A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935CC2BD8BC2400F8BC0B /* cardModel.swift */; };
 		A6A9E3502BDA059B0041E504 /* StaticObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9E34F2BDA059B0041E504 /* StaticObject.swift */; };
 		A6E9AE312BDB6CED00652C98 /* mountain_cloud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6E9AE2F2BDB6CED00652C98 /* mountain_cloud.mp3 */; };
-		A6E9AE322BDB6CED00652C98 /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6E9AE302BDB6CED00652C98 /* beach.mp3 */; };
 		A6E9AE3C2BDCE49700652C98 /* WindowObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9AE3B2BDCE49700652C98 /* WindowObject.swift */; };
 		DA00F6D42BDDDC61001C314B /* ambientSoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00F6D32BDDDC61001C314B /* ambientSoundModel.swift */; };
 		DA00F6D72BDDEAC0001C314B /* AmbientSoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA00F6D62BDDEAC0001C314B /* AmbientSoundViewModel.swift */; };
@@ -41,6 +40,8 @@
 		DDA3B46A2BDA77500078E9A9 /* immersiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */; };
 		DDFC4EBA2BDE8E2500107F35 /* dragonRoar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */; };
 		DDFC4EC02BDF345F00107F35 /* Sunlight.skybox in Resources */ = {isa = PBXBuildFile; fileRef = DDFC4EBF2BDF345F00107F35 /* Sunlight.skybox */; };
+		DDFC4ED12BE32C2F00107F35 /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDFC4ED02BE32C2F00107F35 /* beach.mp3 */; };
+		DDFC4ED42BE32CB700107F35 /* SoundSettingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC4ED32BE32CB700107F35 /* SoundSettingUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +71,6 @@
 		A69935CC2BD8BC2400F8BC0B /* cardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardModel.swift; sourceTree = "<group>"; };
 		A6A9E34F2BDA059B0041E504 /* StaticObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticObject.swift; sourceTree = "<group>"; };
 		A6E9AE2F2BDB6CED00652C98 /* mountain_cloud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mountain_cloud.mp3; sourceTree = "<group>"; };
-		A6E9AE302BDB6CED00652C98 /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
 		A6E9AE3B2BDCE49700652C98 /* WindowObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowObject.swift; sourceTree = "<group>"; };
 		DA00F6D32BDDDC61001C314B /* ambientSoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ambientSoundModel.swift; sourceTree = "<group>"; };
 		DA00F6D62BDDEAC0001C314B /* AmbientSoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoundViewModel.swift; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = immersiveModel.swift; sourceTree = "<group>"; };
 		DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dragonRoar.mp3; sourceTree = "<group>"; };
 		DDFC4EBF2BDF345F00107F35 /* Sunlight.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Sunlight.skybox; sourceTree = "<group>"; };
+		DDFC4ED02BE32C2F00107F35 /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
+		DDFC4ED32BE32CB700107F35 /* SoundSettingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSettingUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		A69935A32BD77CC300F8BC0B /* nano1 */ = {
 			isa = PBXGroup;
 			children = (
+				DDFC4ED22BE32C9D00107F35 /* Utils */,
 				DDFC4EBE2BDF33F200107F35 /* Resources */,
 				DA00F6D52BDDEAAF001C314B /* ViewModel */,
 				DD1358D72BDB641A0021BEA4 /* Music */,
@@ -245,7 +248,7 @@
 				DA00F6E22BDE35FE001C314B /* AmbientSounds */,
 				DD1358D92BDB643C0021BEA4 /* winter_forest.mp3 */,
 				DD1358D82BDB643C0021BEA4 /* magic_night.mp3 */,
-				A6E9AE302BDB6CED00652C98 /* beach.mp3 */,
+				DDFC4ED02BE32C2F00107F35 /* beach.mp3 */,
 				A6E9AE2F2BDB6CED00652C98 /* mountain_cloud.mp3 */,
 			);
 			path = Music;
@@ -257,6 +260,14 @@
 				DDFC4EBF2BDF345F00107F35 /* Sunlight.skybox */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDFC4ED22BE32C9D00107F35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DDFC4ED32BE32CB700107F35 /* SoundSettingUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,7 +360,6 @@
 				DA00F6EA2BDE46F3001C314B /* ice_cracking.mp3 in Resources */,
 				DA00F6EC2BDE4880001C314B /* snow_storm.mp3 in Resources */,
 				DA00F6F42BDE52B7001C314B /* water_flow.mp3 in Resources */,
-				A6E9AE322BDB6CED00652C98 /* beach.mp3 in Resources */,
 				DA00F6F12BDE4E32001C314B /* palm_tree.mp3 in Resources */,
 				A69935B22BD77CC400F8BC0B /* Preview Assets.xcassets in Resources */,
 				DA00F6F22BDE4E32001C314B /* ocean.mp3 in Resources */,
@@ -360,6 +370,7 @@
 				DA00F6DD2BDE018E001C314B /* footstep_onSnowmp3.mp3 in Resources */,
 				A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */,
 				DD1358DA2BDB643C0021BEA4 /* magic_night.mp3 in Resources */,
+				DDFC4ED12BE32C2F00107F35 /* beach.mp3 in Resources */,
 				DA00F6F02BDE4E32001C314B /* birds_singing.mp3 in Resources */,
 				DD1358DB2BDB643C0021BEA4 /* winter_forest.mp3 in Resources */,
 				DDFC4EC02BDF345F00107F35 /* Sunlight.skybox in Resources */,
@@ -390,6 +401,7 @@
 				A67E0A2B2BDF586400F304ED /* SoundPage.swift in Sources */,
 				A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */,
 				A69935A92BD77CC300F8BC0B /* nano1App.swift in Sources */,
+				DDFC4ED42BE32CB700107F35 /* SoundSettingUtils.swift in Sources */,
 				A6E9AE3C2BDCE49700652C98 /* WindowObject.swift in Sources */,
 				DA1727C72BD81EA900241BE1 /* BackgroundMusicView.swift in Sources */,
 				A69935AD2BD77CC300F8BC0B /* ImmersiveView.swift in Sources */,
