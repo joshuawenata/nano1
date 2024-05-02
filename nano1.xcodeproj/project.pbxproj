@@ -18,6 +18,7 @@
 		A69935BD2BD77CC400F8BC0B /* nano1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935BC2BD77CC400F8BC0B /* nano1Tests.swift */; };
 		A69935CA2BD8BBA300F8BC0B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935C92BD8BBA300F8BC0B /* Card.swift */; };
 		A69935CD2BD8BC2400F8BC0B /* cardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69935CC2BD8BC2400F8BC0B /* cardModel.swift */; };
+		A6A8F71A2BE341F60073488F /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6A8F7192BE341F60073488F /* beach.mp3 */; };
 		A6A9E3502BDA059B0041E504 /* StaticObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9E34F2BDA059B0041E504 /* StaticObject.swift */; };
 		A6E9AE312BDB6CED00652C98 /* mountain_cloud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6E9AE2F2BDB6CED00652C98 /* mountain_cloud.mp3 */; };
 		A6E9AE3C2BDCE49700652C98 /* WindowObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E9AE3B2BDCE49700652C98 /* WindowObject.swift */; };
@@ -40,7 +41,6 @@
 		DDA3B46A2BDA77500078E9A9 /* immersiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */; };
 		DDFC4EBA2BDE8E2500107F35 /* dragonRoar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */; };
 		DDFC4EC02BDF345F00107F35 /* Sunlight.skybox in Resources */ = {isa = PBXBuildFile; fileRef = DDFC4EBF2BDF345F00107F35 /* Sunlight.skybox */; };
-		DDFC4ED12BE32C2F00107F35 /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDFC4ED02BE32C2F00107F35 /* beach.mp3 */; };
 		DDFC4ED42BE32CB700107F35 /* SoundSettingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC4ED32BE32CB700107F35 /* SoundSettingUtils.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +69,7 @@
 		A69935BC2BD77CC400F8BC0B /* nano1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nano1Tests.swift; sourceTree = "<group>"; };
 		A69935C92BD8BBA300F8BC0B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A69935CC2BD8BC2400F8BC0B /* cardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardModel.swift; sourceTree = "<group>"; };
+		A6A8F7192BE341F60073488F /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
 		A6A9E34F2BDA059B0041E504 /* StaticObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticObject.swift; sourceTree = "<group>"; };
 		A6E9AE2F2BDB6CED00652C98 /* mountain_cloud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mountain_cloud.mp3; sourceTree = "<group>"; };
 		A6E9AE3B2BDCE49700652C98 /* WindowObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowObject.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		DDA3B4692BDA77500078E9A9 /* immersiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = immersiveModel.swift; sourceTree = "<group>"; };
 		DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dragonRoar.mp3; sourceTree = "<group>"; };
 		DDFC4EBF2BDF345F00107F35 /* Sunlight.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Sunlight.skybox; sourceTree = "<group>"; };
-		DDFC4ED02BE32C2F00107F35 /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
 		DDFC4ED32BE32CB700107F35 /* SoundSettingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSettingUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,11 +244,11 @@
 		DD1358D72BDB641A0021BEA4 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */,
 				DA00F6E22BDE35FE001C314B /* AmbientSounds */,
+				DDFC4EB92BDE8E2500107F35 /* dragonRoar.mp3 */,
 				DD1358D92BDB643C0021BEA4 /* winter_forest.mp3 */,
 				DD1358D82BDB643C0021BEA4 /* magic_night.mp3 */,
-				DDFC4ED02BE32C2F00107F35 /* beach.mp3 */,
+				A6A8F7192BE341F60073488F /* beach.mp3 */,
 				A6E9AE2F2BDB6CED00652C98 /* mountain_cloud.mp3 */,
 			);
 			path = Music;
@@ -357,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A8F71A2BE341F60073488F /* beach.mp3 in Resources */,
 				DA00F6EA2BDE46F3001C314B /* ice_cracking.mp3 in Resources */,
 				DA00F6EC2BDE4880001C314B /* snow_storm.mp3 in Resources */,
 				DA00F6F42BDE52B7001C314B /* water_flow.mp3 in Resources */,
@@ -370,7 +371,6 @@
 				DA00F6DD2BDE018E001C314B /* footstep_onSnowmp3.mp3 in Resources */,
 				A69935AF2BD77CC400F8BC0B /* Assets.xcassets in Resources */,
 				DD1358DA2BDB643C0021BEA4 /* magic_night.mp3 in Resources */,
-				DDFC4ED12BE32C2F00107F35 /* beach.mp3 in Resources */,
 				DA00F6F02BDE4E32001C314B /* birds_singing.mp3 in Resources */,
 				DD1358DB2BDB643C0021BEA4 /* winter_forest.mp3 in Resources */,
 				DDFC4EC02BDF345F00107F35 /* Sunlight.skybox in Resources */,

@@ -77,7 +77,8 @@ struct ImmersiveView: View {
         
         do {
             player = try AVAudioPlayer(contentsOf: url)
-            player?.volume = 0.2
+            player?.volume = 0.5
+            player?.numberOfLoops = -1
             //            player?.delegate = self
             player?.play()
         } catch {
