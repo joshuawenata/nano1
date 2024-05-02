@@ -67,19 +67,5 @@ def Xform "Root"
             }
         }
     }
-
-    def "deer" (
-        active = true
-        customData = {
-            float3 rotationEulerHint = (0, -0.69813174, 0)
-        }
-        references = @Deer (1).usdz@
-    )
-    {
-        quatf xformOp:orient = (0.9396926, 0, -0.34202012, 0)
-        float3 xformOp:scale = (0.005, 0.005, 0.005)
-        float3 xformOp:translate = (0.6, 1.1, -0.8)
-        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
-    }
 }
 
