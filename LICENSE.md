@@ -2,7 +2,7 @@
 
 ## Copyright © 2024 Joshua Wenata Sunarto, Michelle Chau, Lutfi Misbachul Munir
 
-Permission is hereby granted, free of charge, to the authorized team members of Fall Of Aethel (the "Software"), to use the Software solely for any purposes, subject to the following conditions:
+Permission is hereby granted, free of charge, to the authorized team members of Echo (the "Software"), to use the Software solely for any purposes, subject to the following conditions:
 
 1. **Credit**:
    - The Software must credit Joshua Wenata Sunarto, Michelle Chau, Lutfi Misbachul Munir as the original authors of the code.
